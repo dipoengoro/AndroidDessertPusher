@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright 2018, The Android Open Source Project
   ~
@@ -39,6 +38,7 @@
             android:id="@+id/background_image"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
             android:scaleType="centerCrop"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -72,11 +72,13 @@
             android:layout_width="@dimen/button_width"
             android:layout_height="@dimen/button_height"
             android:background="?android:selectableItemBackground"
+            android:contentDescription="@string/app_name"
             android:scaleType="centerCrop"
             app:layout_constraintBottom_toTopOf="@+id/white_background"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="DuplicateSpeakableTextCheck"
             tools:src="@drawable/cupcake" />
 
         <!-- Code for white box at the bottom, using ShapeDrawable defined in the drawable folder -->
